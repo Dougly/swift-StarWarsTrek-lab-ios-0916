@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,12 +19,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guA-hH-B3x">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NMM-FI-Wsn">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AnakinJedi" translatesAutoresizingMaskIntoConstraints="NO" id="wbH-zx-PxX"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chewbacca" translatesAutoresizingMaskIntoConstraints="NO" id="6LI-2D-lQg"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HanSolo" translatesAutoresizingMaskIntoConstraints="NO" id="HsP-x4-hFs"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LukeSkywalker" translatesAutoresizingMaskIntoConstraints="NO" id="qmT-jn-Rvb"/>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NMM-FI-Wsn" firstAttribute="leading" secondItem="guA-hH-B3x" secondAttribute="leading" id="6PU-qC-fwN"/>
+                                    <constraint firstItem="NMM-FI-Wsn" firstAttribute="width" secondItem="guA-hH-B3x" secondAttribute="width" multiplier="4" id="6cz-4M-hxI"/>
+                                    <constraint firstItem="NMM-FI-Wsn" firstAttribute="height" secondItem="guA-hH-B3x" secondAttribute="height" id="Uwd-hj-aAb"/>
+                                    <constraint firstItem="NMM-FI-Wsn" firstAttribute="top" secondItem="guA-hH-B3x" secondAttribute="top" id="X51-Jn-gDc"/>
+                                    <constraint firstItem="NMM-FI-Wsn" firstAttribute="bottom" secondItem="guA-hH-B3x" secondAttribute="bottom" id="ksM-q5-RSG"/>
+                                    <constraint firstItem="NMM-FI-Wsn" firstAttribute="trailing" secondItem="guA-hH-B3x" secondAttribute="trailing" id="mHM-lE-CcQ"/>
+                                    <constraint firstAttribute="width" secondItem="guA-hH-B3x" secondAttribute="height" multiplier="1:1" id="pd3-UO-ZtE"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-uY-XdU">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VdU-uY-XdU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Iz-x2-dyI"/>
+                            <constraint firstItem="guA-hH-B3x" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="8lj-JK-ZQy"/>
+                            <constraint firstItem="guA-hH-B3x" firstAttribute="top" secondItem="VdU-uY-XdU" secondAttribute="bottom" id="ohM-b1-NQm"/>
+                            <constraint firstItem="VdU-uY-XdU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sZp-n1-JUq"/>
+                            <constraint firstItem="guA-hH-B3x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zhL-ur-6dZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="135"/>
+            <point key="canvasLocation" x="125.59999999999999" y="134.48275862068968"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AnakinJedi" width="256" height="256"/>
+        <image name="Chewbacca" width="256" height="256"/>
+        <image name="HanSolo" width="256" height="256"/>
+        <image name="LukeSkywalker" width="256" height="256"/>
+    </resources>
 </document>
