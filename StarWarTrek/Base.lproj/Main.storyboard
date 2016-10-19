@@ -24,7 +24,11 @@
                                 <subviews>
                                     <stackView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="osA-qG-Oly">
                                         <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LukeSkywalker" translatesAutoresizingMaskIntoConstraints="NO" id="q91-eH-4XZ"/>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LukeSkywalker" translatesAutoresizingMaskIntoConstraints="NO" id="q91-eH-4XZ">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="q91-eH-4XZ" secondAttribute="height" multiplier="1:1" id="abS-iZ-uus"/>
+                                                </constraints>
+                                            </imageView>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AnakinJedi" translatesAutoresizingMaskIntoConstraints="NO" id="j4R-ky-EAb"/>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chewbacca" translatesAutoresizingMaskIntoConstraints="NO" id="Y0J-Nj-yxq"/>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HanSolo" translatesAutoresizingMaskIntoConstraints="NO" id="7aW-X5-Js5"/>
@@ -32,11 +36,11 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="osA-qG-Oly" firstAttribute="top" secondItem="IPB-zU-Td4" secondAttribute="top" id="6TP-46-A7N"/>
+                                    <constraint firstItem="osA-qG-Oly" firstAttribute="leading" secondItem="IPB-zU-Td4" secondAttribute="leading" id="3qF-Ko-O6v"/>
+                                    <constraint firstAttribute="trailing" secondItem="osA-qG-Oly" secondAttribute="trailing" id="9bS-0i-gKE"/>
+                                    <constraint firstItem="osA-qG-Oly" firstAttribute="top" secondItem="IPB-zU-Td4" secondAttribute="top" constant="-64" id="MV7-N4-mQJ"/>
                                     <constraint firstAttribute="width" secondItem="IPB-zU-Td4" secondAttribute="height" multiplier="1:1" id="egC-xc-1Sp"/>
-                                    <constraint firstAttribute="trailing" secondItem="osA-qG-Oly" secondAttribute="trailing" id="rlp-HS-g9X"/>
-                                    <constraint firstAttribute="bottom" secondItem="osA-qG-Oly" secondAttribute="bottom" id="tuv-rX-2ld"/>
-                                    <constraint firstItem="osA-qG-Oly" firstAttribute="leading" secondItem="IPB-zU-Td4" secondAttribute="leading" id="v6i-0X-b5F"/>
+                                    <constraint firstAttribute="bottom" secondItem="osA-qG-Oly" secondAttribute="bottom" id="yAz-Xj-fhz"/>
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-uY-XdU">
@@ -79,8 +83,9 @@
                             <constraint firstItem="mcY-Lw-Y1f" firstAttribute="width" secondItem="mcY-Lw-Y1f" secondAttribute="height" multiplier="1:1" id="GPh-qd-UmC"/>
                             <constraint firstItem="urC-wq-ZOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDU-Sz-dh9"/>
                             <constraint firstItem="mcY-Lw-Y1f" firstAttribute="top" secondItem="urC-wq-ZOE" secondAttribute="bottom" id="PLj-x5-22g"/>
+                            <constraint firstItem="q91-eH-4XZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="a9v-US-MXb"/>
+                            <constraint firstItem="VdU-uY-XdU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ady-px-S3q"/>
                             <constraint firstItem="IPB-zU-Td4" firstAttribute="top" secondItem="VdU-uY-XdU" secondAttribute="bottom" id="ce8-Rl-M5Y"/>
-                            <constraint firstItem="VdU-uY-XdU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sZp-n1-JUq"/>
                             <constraint firstItem="mcY-Lw-Y1f" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="tzH-C3-IOA"/>
                             <constraint firstItem="IPB-zU-Td4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="vPQ-uD-VS7"/>
                             <constraint firstItem="urC-wq-ZOE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x1L-wH-BHx"/>
